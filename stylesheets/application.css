@@ -1,0 +1,234 @@
+body {
+  color:;
+  background-color: #fff;
+}
+
+/* 全体を真ん中に配置 */
+.container {
+  width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #FFFFFF;
+  border: solid 2px #EFEFEF;
+  box-shadow: 0px 0px 0px gray;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header_logo{ 
+  flex: 0 0 20%;
+  text-align: center;
+  font-size: 16px;
+  color: #3B3B3B;
+  font-family: gill-sans-nova, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 16px;
+}
+
+.global-nav {
+  flex: 0 0 70%;
+}
+
+.global-nav__items {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+}
+
+
+.global-nav__item {
+  flex: 0 0 10%;
+  font-family: noto-sans, sans-serif; 
+  font-weight: 200;
+  font-style: normal;
+  color: #272727;
+  opacity: 0.5;
+}
+
+.global-nav__item:hover {
+  opacity: 1;
+}
+
+.main-image {
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 24px;
+}
+
+body {
+  font-family: dnp-shuei-mincho-pr6, sans-serif;
+  font-weight: 400;
+}
+
+.article1 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.article1-image {
+  width: 544px;
+  margin: 50px 50px;
+}
+
+.article1-right {
+  display: inline-block;
+  flex: 0 0 40%;
+  align-self: center;
+}
+
+.article1-title {
+  font-family: dnp-shuei-mincho-pr6, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 2.5px;
+  color: #3B3B3B;
+}
+
+.article1-paragraph {
+  font-family: dnp-shuei-mincho-pr6, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.36px;
+  color: #3B3B3B;
+  line-height: 2.5em;
+}
+
+.article2 {
+
+}
+
+.article2-title, .article3-title, .article4-title {
+  text-align: center;
+  font-family: dnp-shuei-mincho-pr6, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #3B3B3B;
+  font-size: 25px;
+  letter-spacing: 2.5px;  
+}
+
+.article2-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+}
+
+.article3 {
+}
+
+.article3-title { 
+}
+
+.article3-images {
+  display: flex;
+  justify-content: space-around;
+}
+
+.article3-image1 {  
+}
+
+.article3-image1 {  
+}
+
+.article3-image1 {  
+}
+
+.article3-paragraph {
+  text-align: center;
+  font-family: dnp-shuei-mincho-pr6, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #3B3B3B;
+  font-size: 21px;
+  letter-spacing: 1.05px;  
+  
+}
+
+.article4 {
+  margin: 60px 0 100px 0;
+
+}
+
+.form {
+}
+
+.name ,.mail{
+  display: block;
+  width: 463px;
+  height: 35px;
+  padding: 8px;
+  border: 0.5px solid #707070;
+  border-radius: 11px;
+  opacity: 0.6;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+
+.form-item__textarea {
+  display: block;
+  width: 463px;
+  height: 156px;
+  padding: 8px;
+  border: 0.5px solid #707070;
+  border-radius: 11px;
+  opacity: 0.6;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+
+.form-submit {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 111px;
+  margin-top: 30px;
+  background: #D1D1D1 0% 0% no-repeat padding-box;
+  border-radius: 11px;
+  height: 35px;
+  font-size: 16px;
+  font-color: #7D7D7D;
+}
+
+fotter {
+  background-color: #918F89;
+  display: flex;
+  flex-wrap: wrap;
+  height: 416px;
+  align-items: center;
+}
+
+.fotter_logo {
+  flex: 0 0 40%;
+  text-align: center;
+  font-size: 22px;
+  color: #FFFFFF;
+  font-family: gill-sans-nova, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 21px;
+}
+
+.fotter_items {
+  flex: 0 0 40%;
+  display: flex;
+  color: #FFF;
+  font-family: noto-sans, sans-serif;
+  font-weight: 200;
+  font-size: 18px;
+  font-style: normal;
+  justify-content: flex-end;
+  list-style: none;
+}
+
+.fotter_item {
+  flex: 0 0 20%;
+}
