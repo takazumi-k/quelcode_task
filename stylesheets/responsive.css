@@ -1,20 +1,238 @@
 /* スマホ用ブレイクポイント */
 @media (max-width:600px) {
 
+  html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*
+////////////////////////////////////////
+reset.css では足りない初期化を追加
+////////////////////////////////////////
+*/
+
+/* 全てに box-sizing: border-box; を適用 */
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+/* 画像に関する初期設定 */
+img {
+  /* 大きい画像がはみ出さないように */
+  max-width: 100%;
+  /* 画像周りの無駄なスペースができないように */
+  vertical-align: bottom;
+}
+
+a:link {
+  color: none;
+  background:;
+}
+a:visited {
+  color: white;
+}
+
+.body {
+}
+
 
 
 /* ハンバーガー */
 .header {
+display: flex;
+position: relative;
+z-index: 2;
+}
+
+.header_logo {
+  flex: 0 0 100%;
+  text-align:center;
+  font-size:16px;
+  width: 100%;
+  position: fixed;
+  padding-top: 10px; 
+  color: white;
+  background: #918F89;
+  height: 55px;
+}
+
+.menuWrapper {
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 0;
+  width: 50px;
+  height: 50px;
+}
+
+.menu {
+  overflow: hidden;
+  display: block;
+  position: relative;
+  z-index: 0;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.menu span,
+.menu::before,
+.menu::after {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left:0;
+  right: 0;
+  width: 36px;
+  height: 1px;
+  margin: auto;
+  background: #fff;
+}
+.menu span {
+  overflow: hidden;
+  z-index: 1;
+  color: #fff;
+}
+.menu::before {
+  z-index: 2;
+  transform: translate(0, -12px);
+  content: "";
+}
+.menu::after {
+  z-index: 2;
+  transform: translate(0, 12px);
+  content: "";
+}
+
+.close {
+  overflow: hidden;
+  display: block;
+  position: relative;
+  z-index: 1;
+  width: 50px;
+  height: 50px;
+  margin: -6px;
+  cursor: pointer;
+}
+.close span {
+  top: 18px;
+  left: 6px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.close::before{
+  top: 18px;
+
+  left: 6px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.close::after {
+  display: none;
+  top: 1px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 .global-nav {
+  display: flex;
+  flex: 0 0 100%;
+  position: fixed;
+  top: 218px;
+  width: 100%;
+  opacity: 1;
+  z-index: 0;
+  display: none;
 }
 
+.open {
+  display: flex;
+  flex: 0 0 100%;
+  position: fixed;
+  top: 218px;
+  width: 100%;
+  opacity: 1;
+  z-index: 0;
+  display: block;
+}
 
-#show,#hide {
-  float:right;
-  cursor:pointer;
-}  
+.global-nav__items {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 80px;
+}
+
+.global-nav__item {
+  flex: 0 0 100%;
+  line-height: 80px;
+  font-size: 20px;
+  color: #fff;
+  border-bottom: solid 1px #fff;
+  background-color: #918F89;
+  text-align: center; 
+  margin: 0;
+  opacity: 0.9;
+  }
+
+  .global-nav__items ul li:last-child {
+    border-bottom: solid 10px #fff;
+  }
+
+  .global-nav__item:hover {
+    opacity: 1;
+  }
+  .global-nav__item:hover::after {
+    content: "";
+    display: none;
+  }
 
 /* ハンバーガー終わり */
 
@@ -26,6 +244,7 @@
   border: none;
   box-shadow: none;
 }
+
 
 
 .fotter {
@@ -64,18 +283,22 @@
 .article1 {
   width: 100%;
   display: flex;
+  flex-wrap: wrap-reverse;
 }
 
-.article1-left .{
+.article1-left {
   flex: 0 0 100%;
-  width: %;
-  margin: 0 auto;
-  order: 0;
+  width: 100%;
+  padding-left: 0px;
+
+}
+
+.article1-image {
+  width: 80%;
 }
 .article1-right {
   flex: 0 0 100%;
   width: 100%;
-  order: -1;
 }
 
 .article1-title {
@@ -117,6 +340,11 @@
   margin-top: 60px;
 }
 
+.article3 {
+  position: relative;
+  z-index: 0;
+}
+
 .article3-image {
   filter: brightness(60%);
 }
@@ -126,6 +354,8 @@
   flex: 0 0 80%;
   margin: 20px auto;
   position: relative;
+  z-index: 0;
+
 }
 
 .article3-image1 p {
@@ -141,6 +371,7 @@
   text-align: center;
   background-color: rgba(0,0,0,0);
   }
+
 
 .article3-image2 {
   flex: 0 0 80%;

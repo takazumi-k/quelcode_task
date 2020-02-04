@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <script>
      (function(d) {
         var config = {
@@ -13,16 +14,24 @@
       })(document);
     </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sanitize.css">
     <link rel="stylesheet" type="text/css" href="stylesheets/application.css">
     <link rel="stylesheet" type="text/css" href="stylesheets/responsive.css">
     <link rel="stylesheet" href="https://use.typekit.net/zoa1ctx.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <title>HTML CSS</title>
   </head>
   <body>
+    <p id="text">aaa</p>
+
+
     <div class="container">
       <header class="header">
         <h1 class="header_logo">HTML<br>CSS</h1>
+        <div class="menuWrapper">
+          <a id="id-menu" class="menu" onclick="myfunc1(); return false;"><span></span></a>
+        </d  >
         <nav class="global-nav">
           <ul class="global-nav__items">
             <li class="global-nav__item"><a href="index.html">About</a></li>
@@ -95,5 +104,6 @@
             </div>
       </fotter>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>

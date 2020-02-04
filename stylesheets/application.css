@@ -12,7 +12,15 @@ body {
 
 a {
   text-decoration: none;
-  color: #272727;
+}
+
+a:link {
+  color: none;
+
+}
+a:visited {
+  color: #222222;
+  text-decoration: none;
 }
 
 /* 全体を真ん中に配置 */
@@ -39,6 +47,9 @@ a {
   font-weight: 600;
   font-style: normal;
   line-height: 16px;
+}
+.menuWrapper {
+  display: none;
 }
 
 .global-nav {
@@ -75,10 +86,6 @@ a {
   background-color: black;
   position: absolute;
   top: 48px;
-}
-
-.navToggle {
-  display: ;
 }
 
 .banner {
@@ -220,6 +227,21 @@ margin-top: 210px;
   height: 194px;
   text-align: center;
   line-height: 194px;
+}
+
+.article3-image2{
+position: relative;
+} 
+
+.article3-image2::before {
+  content: '';
+  background-color: rgba(240, 14, 14, 0.5);
+  position: absolute;
+  display: block;
+  opacity: 50%;
+  top: 0;
+  right: 0;
+
 }
 
 .article3-image2 p ,.article3-image3 p {
