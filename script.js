@@ -40,7 +40,6 @@ function hamburger() {
 　　document.getElementsByClassName('menu').classList.toggle('close');
 　　document.getElementsByClassName('global-nav').classList.toggle('open');
 }
-
 document.getElementsByClassName('menuWrapper').addEventListener('click', function () {
 　　hamburger();
 });
