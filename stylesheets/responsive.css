@@ -272,7 +272,7 @@ z-index: 2;
   background-repeat: no-repeat;
 }
 
-.banner p {
+.banner h1 {
   color:#918F89;
   display: inline-block;
   font-family: noto-sans; 
@@ -491,7 +491,7 @@ footer {
 .footer_item {
   flex: 0 0 20%;
 }
-.footer-copyright p {
+.footer-copyright {
   text-align: center;
   font-size: 14px;
   color: #fff;
