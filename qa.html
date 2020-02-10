@@ -25,11 +25,14 @@
     <div class="container">
       <header class="header">
         <h1 class="header_logo">HTML<br>CSS</h1>
-        <nav class="global-nav">
+        <div class="menuWrapper" id="button">
+          <div class="menu" id="line"><span></span></div>
+        </div>
+        <nav class="global-nav" id="sp-nav">
           <ul class="global-nav__items">
             <li class="global-nav__item"><a href="index.html">About</a></li>
             <li class="global-nav__item"><a href="news.html">News</a></li>
-            <li class="global-nav__item"><a href="q&a.html">Q&A</a></li>
+            <li class="global-nav__item"><a href="qa.html">Q&A</a></li>
           <ul>
         </nav>     
       </header>
@@ -40,27 +43,63 @@
           </div>
           <div class="qa-article1">
             <h2 class="qa-article1-title">よくある質問</h2>
-              <ul class="qa-items">
-                <li class="qa-item">家具の取り置きは可能でしょうか</li>
-                <li class="qa-item">家具の取り置きは可能でしょうか</li>
-                <li class="qa-item">家具の取り置きは可能でしょうか</li>
-                <li class="qa-item">家具の取り置きは可能でしょうか</li>
-                <li class="qa-item">家具の取り置きは可能でしょうか</li>
-              </ul>
+              <div class="qa-items">
+                <div class="qa-item">
+                  <p class="question">家具の取り置きは可能でしょうか</p>
+                  <div class="arrow" id="arrow01">
+                    <i class="fas fa-chevron-down"></i>
+                  </div>
+                  <p class="qa-close" id="qa-close01">可能です。<br>
+                    取り置き期間は最大で3週間です。</p>                
+                </div>
+                <div class="qa-item">
+                  <p class="question">家具の取り置きは可能でしょうか</p>
+                  <div class="arrow" id="arrow02">
+                    <i class="fas fa-chevron-down"></i>
+                  </div>
+                  <p class="qa-close" id="qa-close02">可能です。<br>
+                    取り置き期間は最大で3週間です。</p>                
+                </div>
+                <div class="qa-item">
+                  <p class="question">家具の取り置きは可能でしょうか</p>
+                  <div class="arrow" id="arrow03">
+                    <i class="fas fa-chevron-down"></i>
+                  </div>
+                  <p class="qa-close" id="qa-close03">可能です。<br>
+                    取り置き期間は最大で3週間です。</p>                
+                </div>
+                <div class="qa-item">
+                  <p class="question">家具の取り置きは可能でしょうか</p>
+                  <div class="arrow" id="arrow04">
+                    <i class="fas fa-chevron-down"></i>
+                  </div>
+                  <p class="qa-close" id="qa-close04">可能です。<br>
+                    取り置き期間は最大で3週間です。</p>                
+                </div>
+                <div class="qa-item">
+                  <p class="question">家具の取り置きは可能でしょうか</p>
+                  <div class="arrow" id="arrow05">
+                    <i class="fas fa-chevron-down"></i>
+                  </div>
+                  <p class="qa-close" id="qa-close05">可能です。<br>
+                    取り置き期間は最大で3週間です。</p>                
+                </div>
+              </div>
           </div>
         </main>
       <div>
-      <fotter>
-        <h1 class="fotter_logo">HTML<br>CSS</h1>
-          <ul class="fotter_items">
-            <li class="fotter_item">About</li>
-            <li class="fotter_item">News</li>
-            <li class="fotter_item">Q&A</li>
+        <footer>
+          <h1 class="footer_logo">HTML<br>CSS</h1>
+          <ul class="footer_items">
+            <li class="footer_item"><a href="index.html">About</a></li>
+            <li class="footer_item"><a href="news.html">News</a></li>
+            <li class="footer_item"><a href="qa.html">Q&A</a></li>
           </ul>
-            <div class="footer-copyright">
-              @HTMLCSS.code
-            </div>
-      </fotter>
+          <div class="footer-copyright">
+            <p>@HTMLCSS.code</p>
+          </div>
+        </footer>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
