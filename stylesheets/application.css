@@ -4,25 +4,25 @@
   * {
     box-sizing: border-box;
   }
-  
+
   body {
-    color
-    background-color: #FFFFFF;
+    color background-color: #FFFFFF;
   }
-  
+
   a {
     text-decoration: none;
   }
-  
+
   a:link {
     color: #222222;
-  
+
   }
+
   a:visited {
     color: #222222;
     text-decoration: none;
   }
-  
+
   /* 全体を真ん中に配置 */
   .container {
     width: 100%;
@@ -32,40 +32,41 @@
     border: solid 2px #EFEFEF;
     box-shadow: 0px 0px 0px gray;
   }
-  
+
   .header {
     display: flex;
     flex-wrap: wrap;
   }
-  
-  .header_logo{ 
+
+  .header_logo {
     flex: 0 0 20%;
     text-align: center;
     font-size: 16px;
-    color:#3B3B3B;
+    color: #3B3B3B;
     font-family: gill-sans-nova, sans-serif;
     font-weight: 600;
     font-style: normal;
     line-height: 16px;
   }
+
   .menuWrapper {
     display: none;
   }
-  
+
   .global-nav {
     flex: 0 0 70%;
   }
-  
+
   .global-nav__items {
     display: flex;
     justify-content: flex-end;
     list-style: none;
   }
-  
-  
+
+
   .global-nav__item {
     flex: 0 0 10%;
-    font-family: noto-sans, sans-serif; 
+    font-family: noto-sans, sans-serif;
     font-weight: 200;
     font-style: normal;
     color: #272727;
@@ -73,11 +74,11 @@
     opacity: 0.5;
     position: relative;
   }
-  
+
   .global-nav__item:hover {
     opacity: 1;
   }
-  
+
   .global-nav__item:hover::after {
     content: "";
     display: block;
@@ -87,30 +88,30 @@
     position: absolute;
     top: 48px;
   }
-  
+
   .banner {
     background-image: url("../img/AdobeStock_199226712.png");
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
-    font-family: noto-sans; 
+    font-family: noto-sans;
     font-size: 60px;
     padding-top: 600px;
   }
-  
-  
+
+
   .main-image {
     width: 100%;
     height: auto;
     margin-left: auto;
     margin-right: auto;
   }
-  
+
   .article1 {
     display: flex;
     margin-top: 121px;
   }
-  
+
   .article1-image {
     flex: 0 0 50%;
     background-image: url("../img/AdobeStock_189860956.png");
@@ -120,14 +121,14 @@
     padding-left: 100px;
     margin: 50px 50px;
   }
-  
+
   .article1-right {
     display: inline-block;
     flex: 0 0 50%;
     align-self: center;
     padding-left: 50px;
   }
-  
+
   .article1-title {
     font-family: dnp-shuei-mincho-pr6, sans-serif;
     font-weight: 400;
@@ -135,7 +136,7 @@
     letter-spacing: 2.5px;
     color: #3B3B3B;
   }
-  
+
   .article1-paragraph {
     font-family: dnp-shuei-mincho-pr6, sans-serif;
     font-weight: 400;
@@ -144,11 +145,11 @@
     color: #3B3B3B;
     line-height: 2.5em;
   }
-  
+
   .article2 {
-  margin-top: 210px;
+    margin-top: 210px;
   }
-  
+
   .article2-title {
     text-align: center;
     font-family: dnp-shuei-mincho-pr6, sans-serif;
@@ -159,7 +160,7 @@
     letter-spacing: 2.5px;
     margin-bottom: 40px;
   }
-  
+
   .article2-image {
     display: block;
     margin-left: auto;
@@ -167,12 +168,12 @@
     height: auto;
     width: 90%;
   }
-  
+
   .article3 {
     margin-top: 246px;
   }
-  
-  .article3-title { 
+
+  .article3-title {
     font-family: noto-sans;
     font-style: normal;
     text-align: center;
@@ -183,18 +184,18 @@
     letter-spacing: 2.5px;
     margin-bottom: 40px;
   }
-  
+
   .article3-images {
     display: flex;
     justify-content: space-around;
     padding: 0 0px;
     position: relative;
   }
-  
+
   .article3-image {
     position: relative;
   }
-  
+
   .article3-image::before {
     content: "";
     position: absolute;
@@ -205,18 +206,18 @@
     background-color: rgba(0, 0, 0, 0.5);
     transition: .3s ease;
   }
-  
+
   .article3-image:hover::before {
     height: 100%;
   }
-  
-  
+
+
   .article3-image:hover p {
     color: white;
     top: 50%;
-    
+
   }
-  
+
   .article3-image p {
     position: absolute;
     left: 50%;
@@ -227,7 +228,7 @@
     color: transparent;
     transition: .3s ease;
   }
-  
+
   .article3-image1 p {
     opacity: 1;
     position: absolute;
@@ -237,8 +238,8 @@
     font-family: dnp-shuei-mincho-pr6;
     text-align: center;
   }
-  
-  
+
+
   .article3-paragraph {
     margin-top: 20px;
     display: block;
@@ -248,48 +249,52 @@
     font-style: normal;
     color: #3B3B3B;
     font-size: 15px;
-    letter-spacing: 1.05px;  
+    letter-spacing: 1.05px;
     position: relative;
   }
-  
+
   .article3-paragraph:hover::after {
     content: '';
     position: absolute;
-    bottom: -15px;/*線の上下位置*/
+    bottom: -15px;
+    /*線の上下位置*/
     display: inline-block;
-    width: 70px;/*線の長さ*/
-    height: 2px;/*線の太さ*/
+    width: 70px;
+    /*線の長さ*/
+    height: 2px;
+    /*線の太さ*/
     background-color: #918F89;
     border-radius: 2px;
     left: 50%;
     top: 80%;
     -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);/*位置調整*/
+    transform: translateX(-50%);
+    /*位置調整*/
   }
-  
+
   .article4 {
     margin-top: 210px;
     margin-bottom: 200px;
-  
+
   }
-  
-  .article4-title{
-    font-family:noto-sans;
+
+  .article4-title {
+    font-family: noto-sans;
     font-style: normal;
     text-align: center;
     font-weight: 400;
     font-style: normal;
     color: 3B3B3B;
     font-size: 25px;
-    letter-spacing: 2.5px;  
+    letter-spacing: 2.5px;
     margin-bottom: 40px;
-  
+
   }
-  
-  .form {
-  }
-  
-  .name ,.mail{
+
+  .form {}
+
+  .name,
+  .mail {
     display: block;
     width: 463px;
     height: 35px;
@@ -301,7 +306,7 @@
     margin-right: auto;
     margin-top: 30px;
   }
-  
+
   .form-item__textarea {
     display: block;
     width: 463px;
@@ -314,7 +319,7 @@
     margin-right: auto;
     margin-top: 30px;
   }
-  
+
   .form-submit {
     display: block;
     margin-left: auto;
@@ -325,12 +330,13 @@
     border-radius: 20px;
     height: 35px;
     font-size: 16px;
-    color:#FFF;
+    color: #FFF;
   }
+
   .form-submit:hover {
     opacity: 0.6;
   }
-  
+
   footer {
     background-color: #918F89;
     height: 284px;
@@ -338,9 +344,9 @@
     display: flex;
     flex-wrap: wrap;
     padding: 10%;
-    }
-  
-  
+  }
+
+
   .footer_logo {
     flex: 0 0 40%;
     text-align: center;
@@ -351,7 +357,7 @@
     font-style: normal;
     line-height: 21px;
   }
-  
+
   .footer_items {
     flex: 0 0 60%;
     display: flex;
@@ -363,15 +369,16 @@
     justify-content: flex-end;
     list-style: none;
   }
-  .footer_item a{
+
+  .footer_item a {
     color: #fff;
   }
-  
-  
+
+
   .footer_item {
     flex: 0 0 20%;
   }
-  
+
   .footer-copyright {
     flex: 0 0 100%;
     margin-top: 50px;
@@ -382,10 +389,10 @@
     font-family: noto-sans;
     font-weight: 200;
   }
-  
-  
-   /* NEWS */
-  
+
+
+  /* NEWS */
+
   .news-bg {
     background-image: url("../img/AdobeStock_295587079.png");
     padding-top: 300px;
@@ -396,12 +403,12 @@
     font-size: 30px;
     color: #918F89;
   }
-  
+
   .news-article1 {
     margin-bottom: 200px;
   }
-  
-  .news-article1-title{
+
+  .news-article1-title {
     text-align: center;
     font-family: dnp-shuei-mincho-pr6, sans-serif;
     font-weight: 400;
@@ -411,21 +418,21 @@
     letter-spacing: 2.5px;
     margin: 70px 0;
   }
-  
+
   .news-images {
     display: flex;
     justify-content: space-around;
     padding-bottom: 200px;
     position: relative;
   }
-  
+
   .news-image1 .news-image2 .news-image2 {
     flex: auto;
   }
-  
-  
-   /* QA */
-  
+
+
+  /* QA */
+
   .qa-bg {
     background-image: url("../img/AdobeStock_255730246.png");
     padding-top: 300px;
@@ -433,16 +440,16 @@
     background-size: cover;
     padding-top: 400px;
     color: #918F89;
-    font-family: noto-sans; 
+    font-family: noto-sans;
     font-weight: 100;
     font-size: 30px;
   }
-  
-  
+
+
   .qa-article1 {
     margin-bottom: 200px;
   }
-  
+
   .qa-article1-title {
     text-align: center;
     font-family: dnp-shuei-mincho-pr6, sans-serif;
@@ -453,35 +460,34 @@
     letter-spacing: 2.5px;
     margin: 70px 0;
   }
-  
-  .qa-items {
-  }
-  
+
+  .qa-items {}
+
   .qa-item {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     padding: 0 20%;
   }
-  
+
   .question {
     font-family: dnp-shuei-mincho-pr6, sans-serif;
     font-size: 16px;
     color: #3b3b3b;
     flex: 0 0 80%
   }
-  
-  .arrow {
+
+  .question i {
     flex: 0 0 20%;
     cursor: pointer;
   }
-  
+
   .qa-close {
     display: none;
-  
+
   }
-  
-  .qa-open{
+
+  .qa-open {
     flex: 0 0 100%;
     font-family: dnp-shuei-mincho-pr6, sans-serif;
     font-size: 14px;
@@ -490,6 +496,6 @@
     text-align: left;
     display: inline-block;
   }
-  
-  
-  }
+
+
+}
