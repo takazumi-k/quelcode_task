@@ -3,28 +3,26 @@
   <head>
     <meta charset='utf-8'>
     <script>
-  (function(d) {
-    var config = {
-      kitId: 'zqb2muf',
-      scriptTimeout: 3000,
-      async: true
-    },
-    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
-  })(document);
-</script>
-
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" type="text/css" href="stylesheets/application.css">
-<link rel="stylesheet" href="https://use.typekit.net/zoa1ctx.css">
-<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="stylesheets/responsive.css">
+    (function(d) {
+      var config = {
+        kitId: 'zqb2muf',
+        scriptTimeout: 3000,
+        async: true
+      },
+      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+    })(document);
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="stylesheets/application.css">
+    <link rel="stylesheet" href="https://use.typekit.net/zoa1ctx.css">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="stylesheets/responsive.css">
     <title>HTML CSS</title>
   </head>
   <body>
     <div class="container">
       <header class="header">
-        <h1 class="header_logo">HTML<br>CSS</h1>
+        <p class="header_logo">HTML<br>CSS</p>
         <div class="menuWrapper" id="button">
           <div class="menu" id="line"><span></span></div>
         </div>
@@ -36,12 +34,9 @@
           <ul>
         </nav>     
       </header>
-      <div class="body">
         <main class="main">
-          <div class="qa-bg">
-            <p>Q&A</p>
-          </div>
-          <div class="qa-article1">
+          <p class="qa-bg">Q&A</p>
+          <section class="qa-article1">
             <h2 class="qa-article1-title">よくある質問</h2>
               <div class="qa-items">
                 <div class="qa-item">
@@ -85,19 +80,16 @@
                     取り置き期間は最大で3週間です。</p>                
                 </div>
               </div>
-          </div>
+          </section>
         </main>
-      <div>
         <footer>
-          <h1 class="footer_logo">HTML<br>CSS</h1>
+          <p class="footer_logo">HTML<br>CSS</p>
           <ul class="footer_items">
             <li class="footer_item"><a href="index.html">About</a></li>
             <li class="footer_item"><a href="news.html">News</a></li>
             <li class="footer_item"><a href="qa.html">Q&A</a></li>
           </ul>
-          <div class="footer-copyright">
-            <p>@HTMLCSS.code</p>
-          </div>
+          <p class="footer-copyright">@HTMLCSS.code</p>
         </footer>
     </div>
     <script src="script.js"></script>
