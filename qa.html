@@ -2,31 +2,28 @@
 <html>
   <head>
     <meta charset='utf-8'>
-    <script>
-    (function(d) {
-      var config = {
-        kitId: 'zqb2muf',
-        scriptTimeout: 3000,
-        async: true
-      },
-      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
-    })(document);
-    </script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="stylesheets/application.css">
     <link rel="stylesheet" href="https://use.typekit.net/zoa1ctx.css">
-    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="stylesheets/responsive.css">
-    <title>HTML CSS</title>
+    <script>
+  (function(d) {
+    var config = {
+      kitId: 'zqb2muf',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="stylesheets/responsive.css">
+    <title>Q&A</title>
   </head>
   <body>
     <div class="container">
       <header class="header">
-        <p class="header_logo">HTML<br>CSS</p>
-        <div class="menuWrapper" id="button">
-          <div class="menu" id="line"><span></span></div>
-        </div>
-        <nav class="global-nav" id="sp-nav">
+        <h1 class="header_logo">HTML<br>CSS</h1>
+        <nav class="global-nav">
           <ul class="global-nav__items">
             <li class="global-nav__item"><a href="index.html">About</a></li>
             <li class="global-nav__item"><a href="news.html">News</a></li>
@@ -34,64 +31,34 @@
           <ul>
         </nav>     
       </header>
+      <div class="body">
         <main class="main">
-          <p class="qa-bg">Q&A</p>
-          <section class="qa-article1">
+          <div ="banner">
+            <img src="img/AdobeStock_255730246.png" class="main-image" />
+          </div>
+          <div class="qa-article1">
             <h2 class="qa-article1-title">よくある質問</h2>
-              <div class="qa-items">
-                <div class="qa-item">
-                  <p class="question">家具の取り置きは可能でしょうか</p>
-                  <div class="arrow" id="arrow01">
-                    <i class="fas fa-chevron-down"></i>
-                  </div>
-                  <p class="qa-close" id="qa-close01">可能です。<br>
-                    取り置き期間は最大で3週間です。</p>                
-                </div>
-                <div class="qa-item">
-                  <p class="question">家具の取り置きは可能でしょうか</p>
-                  <div class="arrow" id="arrow02">
-                    <i class="fas fa-chevron-down"></i>
-                  </div>
-                  <p class="qa-close" id="qa-close02">可能です。<br>
-                    取り置き期間は最大で3週間です。</p>                
-                </div>
-                <div class="qa-item">
-                  <p class="question">家具の取り置きは可能でしょうか</p>
-                  <div class="arrow" id="arrow03">
-                    <i class="fas fa-chevron-down"></i>
-                  </div>
-                  <p class="qa-close" id="qa-close03">可能です。<br>
-                    取り置き期間は最大で3週間です。</p>                
-                </div>
-                <div class="qa-item">
-                  <p class="question">家具の取り置きは可能でしょうか</p>
-                  <div class="arrow" id="arrow04">
-                    <i class="fas fa-chevron-down"></i>
-                  </div>
-                  <p class="qa-close" id="qa-close04">可能です。<br>
-                    取り置き期間は最大で3週間です。</p>                
-                </div>
-                <div class="qa-item">
-                  <p class="question">家具の取り置きは可能でしょうか</p>
-                  <div class="arrow" id="arrow05">
-                    <i class="fas fa-chevron-down"></i>
-                  </div>
-                  <p class="qa-close" id="qa-close05">可能です。<br>
-                    取り置き期間は最大で3週間です。</p>                
-                </div>
-              </div>
-          </section>
+              <ul class="qa-items">
+                <li class="qa-item">家具の取り置きは可能でしょうか</li>
+                <li class="qa-item">家具の取り置きは可能でしょうか</li>
+                <li class="qa-item">家具の取り置きは可能でしょうか</li>
+                <li class="qa-item">家具の取り置きは可能でしょうか</li>
+                <li class="qa-item">家具の取り置きは可能でしょうか</li>
+              </ul>
+          </div>
         </main>
-        <footer>
-          <p class="footer_logo">HTML<br>CSS</p>
-          <ul class="footer_items">
-            <li class="footer_item"><a href="index.html">About</a></li>
-            <li class="footer_item"><a href="news.html">News</a></li>
-            <li class="footer_item"><a href="qa.html">Q&A</a></li>
+      <div>
+      <fotter>
+        <h1 class="fotter_logo">HTML<br>CSS</h1>
+          <ul class="fotter_items">
+            <li class="fotter_item">About</li>
+            <li class="fotter_item">News</li>
+            <li class="fotter_item">Q&A</li>
           </ul>
-          <p class="footer-copyright">@HTMLCSS.code</p>
-        </footer>
+            <div class="footer-copyright">
+              @HTMLCSS.code
+            </div>
+      </fotter>
     </div>
-    <script src="script.js"></script>
   </body>
 </html>

@@ -4,7 +4,7 @@
     <meta charset='utf-8'>
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <script>
-     (function(d) {
+    (function(d) {
         var config = {
           kitId: 'zqb2muf',
           scriptTimeout: 3000,
@@ -21,11 +21,14 @@
     <title>HTML CSS</title>
   </head>
   <body>
-    <div class="container">
       <header class="header">
-        <h1 class="header_logo">HTML<br>CSS</h1>
+        <p class="header_logo">HTML<br>CSS</p>
         <div class="menuWrapper" id="button">
-          <div class="menu" id="line"><span></span></div>
+          <div class="menu" id="line">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </div>
         <nav class="global-nav" id="sp-nav">
           <ul class="global-nav__items">
@@ -38,7 +41,8 @@
       <main>
           <h1 class="banner">We propose a life.</h1>
           <div class="article1">
-            <img src="img/AdobeStock_189860956.png" class="article1-image">
+            <div class="article1-image">
+            </div>
             <section class="article1-right"> 
               <h2 class="article1-title">暮らしを提案する。</h2>
                 <p class="article1-paragraph">
@@ -55,35 +59,34 @@
           </section>
           <section class="article3">
             <h2 class="article3-title">NEWS</h2>
-            <div class="article3-images">
-              <div class="article3-image">
-                <p>アームストロングのカウチ入荷</p>
-                <img src="img/AdobeStock_59829158_Preview.png" class="image">
+              <div class="article3-images">
+                <div class="article3-image">
+                  <p>アームストロングのカウチ入荷</p>
+                  <img src="img/AdobeStock_59829158_Preview.png" class="image">
+                </div>
+                <div class="article3-image">
+                  <img src="img/AdobeStock_74141361.png" class="image">
+                  <p>アームストロングのチェア入荷</p>
+                </div>
+                <div class="article3-image">
+                  <img src="img/AdobeStock_221963447.png" class="image">
+                  <p>アームストロングのテーブル入荷</p>
+                </div>
               </div>
-              <div class="article3-image">
-                <img src="img/AdobeStock_74141361.png" class="image">
-                <p>アームストロングのチェア入荷</p>
-              </div>
-              <div class="article3-image">
-                <img src="img/AdobeStock_221963447.png" class="image">
-                <p>アームストロングのテーブル入荷</p>
-              </div>
-            </div>
-            <a href="#" class="article3-paragraph">view more</a>
+              <a href="#" class="article3-paragraph">view more</a>
           </section>
-          <div class="article4">
+          <form class="article4">
             <h2 class="article4-title">CONTACT</h2>
-            <form>
+            <div class="form">
               <input type="text" name="example1" value="お名前" class="name">
               <input type="text" name="example2" value="メールアドレス" class="mail">
               <textarea name="example3" value="お問い合わせ内容" class="form-item__textarea"></textarea>
               <input type="submit" value="SEND" class="form-submit">
-            </form>
-          </div>
+            </div>
+          </form>
       </main>
-      <div>
       <footer>
-        <p class="footer_logo">HTML<br>CSS</h1>
+        <p class="footer_logo">HTML<br>CSS</p>
         <ul class="footer_items">
           <li class="footer_item"><a href="index.html">About</a></li>
           <li class="footer_item"><a href="news.html">News</a></li>
@@ -91,7 +94,7 @@
         </ul>
         <p class="footer-copyright">@HTMLCSS.code</p>
       </footer>
-    </div>
+    </main>
     <script src="script.js"></script>
   </body>
 </html>
