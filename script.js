@@ -7,7 +7,7 @@ const toggleNav = () => {
   const nav = document.getElementById('sp-nav');
 
   hamburger.addEventListener('click', function() {
-    line.classList.toggle('close');
+    line.classList.toggle('active');
     nav.classList.toggle('open');
   });
 }
