@@ -4,6 +4,8 @@
 <head>
   <meta charset='utf-8'>
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="stylesheets/application.css">
+  <link rel="stylesheet" href="https://use.typekit.net/zoa1ctx.css">
   <script>
     (function (d) {
       var config = {
@@ -35,49 +37,35 @@
     })(document);
   </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="sanitize.css">
-  <link rel="stylesheet" type="text/css" href="stylesheets/application.css">
   <link rel="stylesheet" type="text/css" href="stylesheets/responsive.css">
-  <link rel="stylesheet" href="https://use.typekit.net/zoa1ctx.css">
-  <title>HTML CSS</title>
+  <title>NEWS</title>
 </head>
 
 <body>
   <header class="header">
     <p class="header_logo">HTML<br>CSS</p>
-    <div class="menu" id="line">
-      <span></span>
-      <span></span>
-      <span></span>
+    <div class="menuWrapper" id="button">
+      <div class="menu" id="line">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div>
     <nav class="global-nav" id="sp-nav">
       <ul class="global-nav__items">
         <li class="global-nav__item"><a href="index.html">About</a></li>
         <li class="global-nav__item"><a href="news.html">News</a></li>
         <li class="global-nav__item"><a href="qa.html">Q&A</a></li>
-      </ul>
+        <ul>
     </nav>
   </header>
-  <main>
-    <div class="banner">
-      <h1 class="banner-text">We propose a life.</h1>
+  <main class="main">
+    <div class="news-bg">
+      <h1 class="news-bg-text">NEWS</h1>
     </div>
-    <section class="article1">
-      <h2 class="article1-title">暮らしを提案する。</h2>
-      <p class="article1-paragraph">
-        私たちは、家具を売るのではなく、お客様の理想とする <br>
-        「暮らし」を提案します。<br>
-        仕事で疲れた後に帰りたくなる、 <br>
-        今日も１日頑張ろうと思える、<br>
-        そんな空間をお客様と一緒に作り上げていくのが私たちの仕事です。</p>
-    </section>
-    <section class="article2">
-      <h2 class="article2-title">豊富なスタイル</h2>
-      <img src="img/AdobeStock_279823582.png" class="article2-image">
-    </section>
     <section class="article3">
       <h2 class="article3-title">NEWS</h2>
-      <div class="article3-images">
+      <div class="news-images">
         <div class="article3-image">
           <p>アームストロングのカウチ入荷</p>
           <img src="img/AdobeStock_59829158_Preview.png" class="image">
@@ -91,17 +79,7 @@
           <p>アームストロングのテーブル入荷</p>
         </div>
       </div>
-      <a href="#" class="article3-paragraph">view more</a>
     </section>
-    <div class="article4">
-      <h2 class="article4-title">CONTACT</h2>
-      <form class="form">
-        <input type="text" name="example1" value="お名前" class="name">
-        <input type="text" name="example2" value="メールアドレス" class="mail">
-        <textarea name="example3" value="お問い合わせ内容" class="form-item__textarea"></textarea>
-        <input type="submit" value="SEND" class="form-submit">
-      </form>
-    </div>
   </main>
   <footer>
     <p class="footer_logo">HTML<br>CSS</p>
