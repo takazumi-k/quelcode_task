@@ -90,18 +90,22 @@
     color: #272727;
     margin: 10px;
     opacity: 0.6;
-
   }
 
-  .global-nav__item:hover {
+  .global-nav__item_selected {
+    flex: 0 0 30%;
+    font-family: noto-sans;
+    font-style: normal;
+    color: #272727;
+    margin: 10px;
     opacity: 1;
   }
 
-  .global-nav__item:hover::after {
+  .global-nav__item_selected:after {
     content: "";
     display: block;
     height: 2px;
-    width: 50px;
+    width: 45px;
     background-color: black;
     position: absolute;
     top: 60px;
