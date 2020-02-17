@@ -172,11 +172,12 @@ reset.css では足りない初期化を追加
   /* ハンバーガー */
   .header {
     position: fixed;
-    z-index: 2;
-    background: #918F89;
+    top: 0px;
+    left: 0px;
     width: 100%;
     height: 55px;
-    position: relative;
+    z-index: 2;
+    background: #918F89;
   }
 
   .header_logo {
@@ -258,21 +259,22 @@ reset.css では足りない初期化を追加
     display: flex;
     flex: 0 0 100%;
     position: fixed;
-    top: 218px;
+    top: 55px;
     width: 100%;
     opacity: 1;
     z-index: 0;
     display: none;
+    transition: .3s ease;
   }
 
   .global-nav.open {
-    display: flex;
+    /*  display: flex;
     flex: 0 0 100%;
     position: fixed;
     top: 54px;
     width: 100%;
     opacity: 1;
-    z-index: 0;
+    z-index: 0;*/
     display: block;
   }
 
@@ -291,6 +293,7 @@ reset.css では足りない初期化を追加
     flex: 0 0 100%;
     line-height: 80px;
     font-size: 20px;
+    font-weight: bold;
     color: #fff;
     border-bottom: solid 1px #fff;
     background-color: #918F89;
@@ -349,12 +352,44 @@ reset.css では足りない初期化を追加
   }
 
   .article1 {
-    flex: 0 0 80%;
+    background-image: url("../img/AdobeStock_189860956.png");
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position-x: center;
+    background-position-y: bottom;
+    height: 700px;
+    position: relative;
+    padding-bottom: 30%;
+  }
+
+  .article1-title {
+    text-align: center;
+    display: block;
+    width: auto;
+    font-family: dnp-shuei-mincho-pr6;
+    font-style: normal;
+    color: #3B3B3B;
+    font-size: 26px;
+    letter-spacing: 2.5px;
+    margin-top: 10%;
+    margin-bottom: 10px;
+  }
+
+  .article1-paragraph {
+    padding: 20px 20%;
+    font-family: dnp-shuei-mincho-pr6, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.36px;
+    color: #3B3B3B;
+    line-height: 2.5em;
+  }
+
+  /*.article1 {
     background-image: url("../img/AdobeStock_189860956.png");
     padding-top: 400px;
     background-repeat: no-repeat;
     background-size: cover;
-    flex: 0 0 100%;
     width: 100%;
     padding: 0 10%;
   }
@@ -379,7 +414,7 @@ reset.css では足りない初期化を追加
     letter-spacing: 0.36px;
     color: #3B3B3B;
     line-height: 2.5em;
-  }
+  }*/
 
 
   .article2 {
@@ -565,11 +600,18 @@ reset.css では足りない初期化を追加
     padding-top: 700px;
     background-repeat: no-repeat;
     background-size: cover;
-    color: #918F89;
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+
+  .news-bg-text {
+    position: absolute;
+    top: 20%;
     font-family: noto-sans;
     font-weight: 100;
     font-size: 40px;
-    text-align: center;
+    color: #918F89;
   }
 
   .news-article1 {}
@@ -659,10 +701,18 @@ reset.css では足りない初期化を追加
     padding-top: 700px;
     background-repeat: no-repeat;
     background-size: cover;
-    color: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+
+  .qa-bg-text {
+    position: absolute;
     font-family: noto-sans;
     font-weight: 100;
     font-size: 40px;
+    color: white;
+    top: 20%;
     text-align: center;
   }
 
