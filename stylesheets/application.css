@@ -50,7 +50,11 @@
     padding-left: 20%;
   }
 
-  .global-nav {}
+  .global-nav {
+    background-color: ;
+    flex: 0 0 40%;
+
+  }
 
   .global-nav__items {
     display: flex;
@@ -61,12 +65,11 @@
   .global-nav__item {
     flex: 0 0 30%;
     font-family: noto-sans;
-    font-weight: 200;
     font-style: normal;
     color: #272727;
     margin: 10px;
-    opacity: 0.5;
-    position: relative;
+    opacity: 0.6;
+
   }
 
   .global-nav__item:hover {
@@ -80,7 +83,7 @@
     width: 50px;
     background-color: black;
     position: absolute;
-    top: 48px;
+    top: 60px;
   }
 
   .menu {
@@ -92,12 +95,19 @@
     background-image: url("../img/AdobeStock_199226712.png");
     background-repeat: no-repeat;
     background-size: cover;
-    color: white;
-    font-family: noto-sans;
-    font-size: 60px;
-    padding-top: 600px;
+    height: 600px;
+    display: flex;
+    align-items: center;
   }
 
+  .banner-text {
+    color: #918F89;
+    position: absolute;
+    font-family: noto-sans;
+    font-size: 60px;
+    padding: 0 10% 0 10%;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
 
   .main-image {
     width: 100%;
@@ -175,12 +185,11 @@
 
   .article3-images {
     display: flex;
-    justify-content: space-around;
-    padding: 0 0px;
-    position: relative;
+    padding: ;
   }
 
   .article3-image {
+    flex: 0 0 30%;
     position: relative;
   }
 
@@ -215,16 +224,6 @@
     transform: translate(-50%, -50%);
     color: transparent;
     transition: .3s ease;
-  }
-
-  .article3-image1 p {
-    opacity: 1;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    color: red;
-    font-family: dnp-shuei-mincho-pr6;
-    text-align: center;
   }
 
 
@@ -335,6 +334,7 @@
 
 
   .footer_logo {
+    flex: 0 0 40%;
     text-align: center;
     font-size: 22px;
     color: #FFFFFF;
@@ -345,6 +345,7 @@
   }
 
   .footer_items {
+    flex: 0 0 60%;
     display: flex;
     justify-content: flex-end;
     list-style: none;
@@ -355,6 +356,7 @@
   }
 
   .footer_item {
+    flex: 0 0 33%;
     color: #FFF;
     font-family: noto-sans;
     font-weight: 200;
