@@ -13,22 +13,6 @@ const toggleNav = () => {
 toggleNav();
 
 
-/* メニューのカレント表示 */
-const selectedNav = () => {
-  const about = document.getElementById('about');
-  const news = document.getElementById('news');
-  const qa = document.getElementById('qa');
-
-  about.addEventListener('click', function () {
-    about.classList.toggle('.selected');
-    nav.classList.toggle('open');
-  });
-}
-selectedNav();
-
-if (element.classList.contains('selected') === true) {}
-
-
 /* Ｑ＆Ａアコーディオン */
 const qaToggle01 = () => {
   const arrow = document.getElementById('arrow01');
