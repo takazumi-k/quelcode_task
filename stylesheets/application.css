@@ -53,11 +53,13 @@
     box-shadow: 0px 0px 0px gray;
   }
 
-  .header {
+  header {
     display: flex;
     background-color: white;
     justify-content: space-between;
     align-items: center;
+    height: 60px;
+    padding: 0 10%;
   }
 
   .header_logo {
@@ -68,11 +70,9 @@
     font-weight: 600;
     font-style: normal;
     line-height: 16px;
-    padding-left: 20%;
   }
 
   .global-nav {
-    background-color: ;
     flex: 0 0 40%;
 
   }
@@ -80,28 +80,32 @@
   .global-nav__items {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     list-style: none;
   }
 
   .global-nav__item {
-    flex: 0 0 30%;
+    /* flex: 0 0 30%; */
+    margin: 0 10%;
     font-family: noto-sans;
     font-style: normal;
     color: #272727;
-    margin: 10px;
     opacity: 0.6;
+    padding: 22px 0;
   }
 
   .global-nav__item_selected {
-    flex: 0 0 30%;
+    /* flex: 0 0 30%; */
+    margin: 0 10% 0 10%;
     font-family: noto-sans;
     font-style: normal;
     color: #272727;
-    margin: 10px;
     opacity: 1;
+    border-bottom: solid 2px #272727;
+    padding: 22px 0;
   }
 
-  .global-nav__item_selected:after {
+  /*  .global-nav__item_selected:after {
     content: "";
     display: block;
     height: 2px;
@@ -109,7 +113,7 @@
     background-color: black;
     position: absolute;
     top: 60px;
-  }
+  }*/
 
   .menu {
     display: none;
@@ -121,8 +125,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 600px;
-    display: flex;
-    align-items: center;
+    /* display: flex;
+    align-items: center; */
   }
 
   .banner-text {
@@ -131,6 +135,7 @@
     font-family: noto-sans;
     font-size: 60px;
     padding: 0 10% 0 10%;
+    line-height: 600px;
     background-color: rgba(255, 255, 255, 0.8);
   }
 
@@ -151,23 +156,16 @@
   }
 
   .article1-title {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    padding-left: 10%;
-    font-family: dnp-shuei-mincho-pr6, sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    padding-left: 60%;
+    font-size: 20px;
+    font-family: dnp-shuei-mincho-pr6;
     letter-spacing: 2.5px;
     color: #3B3B3B;
   }
 
   .article1-paragraph {
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    padding-left: 10%;
-    font-family: dnp-shuei-mincho-pr6, sans-serif;
+    padding: 5% 0 0 60%;
+    font-family: dnp-shuei-mincho-pr6;
     font-weight: 400;
     font-style: normal;
     letter-spacing: 0.36px;
@@ -176,12 +174,12 @@
   }
 
   .article2 {
-    margin-top: 210px;
+    margin: 0 0 200px 0;
   }
 
   .article2-title {
     text-align: center;
-    font-family: dnp-shuei-mincho-pr6, sans-serif;
+    font-family: dnp-shuei-mincho-pr6;
     font-weight: 400;
     font-style: normal;
     color: #3B3B3B;
@@ -192,14 +190,14 @@
 
   .article2-image {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     height: auto;
     width: 90%;
   }
 
   .article3 {
-    margin-top: 246px;
+    margin: 0 0 210px 0;
+    text-align: center;
   }
 
   .article3-title {
@@ -259,38 +257,21 @@
 
   .article3-paragraph {
     margin-top: 20px;
-    display: block;
-    text-align: center;
+    display: inline-block;
     font-family: noto-sans;
-    font-weight: 400;
-    font-style: normal;
     color: #3B3B3B;
     font-size: 15px;
     letter-spacing: 1.05px;
-    position: relative;
+    transition: .3s ease;
+    border-bottom: none;
+
   }
 
-  .article3-paragraph:hover::after {
-    content: '';
-    position: absolute;
-    bottom: -15px;
-    /*線の上下位置*/
-    display: inline-block;
-    width: 70px;
-    /*線の長さ*/
-    height: 2px;
-    /*線の太さ*/
-    background-color: #918F89;
-    border-radius: 2px;
-    left: 50%;
-    top: 80%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-    /*位置調整*/
+  .article3-paragraph:hover {
+    border-bottom: solid 2px black;
   }
 
   .article4 {
-    margin-top: 210px;
     margin-bottom: 200px;
 
   }
@@ -308,33 +289,30 @@
 
   }
 
-  .form {}
+  .form {
+    padding: 0 20%;
+  }
 
   .name,
   .mail {
     display: block;
-    width: 463px;
+    width: 100%;
     height: 35px;
     padding: 8px;
     border: 0.5px solid #707070;
     border-radius: 11px;
     opacity: 0.6;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30px;
+    margin-bottom: 30px;
   }
 
   .form-item__textarea {
     display: block;
-    width: 463px;
+    width: 100%;
     height: 156px;
     padding: 8px;
     border: 0.5px solid #707070;
     border-radius: 11px;
     opacity: 0.6;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30px;
   }
 
   .form-submit {
@@ -403,6 +381,7 @@
     font-size: 10px;
     color: #fff;
     font-family: noto-sans;
+    margin-top: 50px;
   }
 
 
@@ -477,7 +456,7 @@
 
   .qa-article1-title {
     text-align: center;
-    font-family: dnp-shuei-mincho-pr6, sans-serif;
+    font-family: dnp-shuei-mincho-pr6;
     font-weight: 400;
     font-style: normal;
     color: #3B3B3B;
@@ -492,20 +471,27 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    padding: 0 20%;
+    padding: 0 200px;
   }
 
   .question {
-    font-family: dnp-shuei-mincho-pr6, sans-serif;
+    font-family: dnp-shuei-mincho-pr6;
     font-size: 16px;
     color: #3b3b3b;
-    flex: 0 0 80%
+    flex: 0 0 80%;
+    padding: 20px 0;
   }
 
   .question i {
     flex: 0 0 20%;
     cursor: pointer;
   }
+
+  .fas fa-chevron-down {
+    cursor: pointer;
+
+  }
+
 
   .qa-close {
     display: none;
