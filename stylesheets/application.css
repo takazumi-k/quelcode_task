@@ -150,9 +150,10 @@
   .article1 {
     background-image: url("../img/AdobeStock_189860956.png");
     background-repeat: no-repeat;
-    background-size: 50%;
+    background-size: 544px, 540px;
+    background-position: 10%, 0;
     padding: 30% 0 30% 60%;
-    margin: 10% 0;
+    /* margin: 10% 0; */
   }
 
   .article1-title {
