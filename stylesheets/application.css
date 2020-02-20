@@ -125,18 +125,19 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 600px;
+    position: relative;
     /* display: flex;
     align-items: center; */
   }
 
   .banner-text {
     color: #918F89;
-    position: absolute;
     font-family: noto-sans;
     font-size: 60px;
-    padding: 0 10% 0 10%;
-    line-height: 600px;
     background-color: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    top: 50%;
+    left: 5%;
   }
 
   .main-image {
@@ -150,23 +151,20 @@
     background-image: url("../img/AdobeStock_189860956.png");
     background-repeat: no-repeat;
     background-size: 50%;
-    height: 400px;
-    margin: 20% 10%;
-    position: relative;
+    padding: 30% 0 30% 60%;
+    margin: 10% 0;
   }
 
   .article1-title {
-    padding-left: 60%;
     font-size: 20px;
     font-family: dnp-shuei-mincho-pr6;
     letter-spacing: 2.5px;
     color: #3B3B3B;
+    margin-bottom: 20px;
   }
 
   .article1-paragraph {
-    padding: 5% 0 0 60%;
     font-family: dnp-shuei-mincho-pr6;
-    font-weight: 400;
     font-style: normal;
     letter-spacing: 0.36px;
     color: #3B3B3B;
@@ -260,7 +258,7 @@
     display: inline-block;
     font-family: noto-sans;
     color: #3B3B3B;
-    font-size: 15px;
+    font-size: 21px;
     letter-spacing: 1.05px;
     transition: .3s ease;
     border-bottom: none;
@@ -392,8 +390,9 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 400px;
-    display: flex;
     align-items: center;
+    margin: 0 0 100px 0;
+    position: relative;
   }
 
   .news-bg-text {
@@ -401,7 +400,9 @@
     font-size: 30px;
     color: #918F89;
     font-family: noto-sans;
-    padding: 20%;
+    position: absolute;
+    top: 50%;
+    left: 30%;
   }
 
   .news-article1 {
@@ -440,18 +441,21 @@
     height: 400px;
     display: flex;
     align-items: center;
+    position: relative;
   }
 
   .qa-bg-text {
     color: #FFFFFF;
     font-family: noto-sans;
     font-size: 30px;
-    padding: 20%;
+    position: absolute;
+    top: 50%;
+    left: 30%;
   }
 
 
   .qa-article1 {
-    margin-bottom: 200px;
+    margin: 100px 200px;
   }
 
   .qa-article1-title {
@@ -462,29 +466,27 @@
     color: #3B3B3B;
     font-size: 25px;
     letter-spacing: 2.5px;
-    margin: 70px 0;
   }
 
   .qa-items {
-    padding: 0 20%;
+    padding: 0 30%;
   }
 
   .qa-item {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: space-between;
     padding: 60px 0;
   }
 
   .question {
-    flex: 0 0 80%;
     font-family: dnp-shuei-mincho-pr6;
     font-size: 16px;
     color: #3b3b3b;
   }
 
   .qa-item i {
-    flex: 0 0 20%;
     cursor: pointer;
   }
 
