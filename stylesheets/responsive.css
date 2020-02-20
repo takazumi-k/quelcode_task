@@ -625,11 +625,9 @@
 
   .qa-open {
     padding: 20px;
-    flex: 0 0 100%;
     font-family: dnp-shuei-mincho-pr6, sans-serif;
     font-size: 14px;
     color: #3b3b3b;
-    flex: 0 0 80%;
     text-align: left;
     display: inline-block;
   }
