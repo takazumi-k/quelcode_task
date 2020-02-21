@@ -6,14 +6,13 @@
   *:before,
   *:after {
     box-sizing: border-box;
+    max-width: 100%;
+
   }
 
-  /* 画像に関する初期設定 */
   img {
-    /* 大きい画像がはみ出さないように */
     max-width: 100%;
-    /* 画像周りの無駄なスペースができないように */
-    vertical-align: bottom;
+    /* vertical-align: bottom; */
   }
 
   a:link {
@@ -23,7 +22,6 @@
 
   a:visited {
     text-decoration: none;
-    color: none;
   }
 
 
@@ -31,7 +29,10 @@
     text-decoration: none;
   }
 
-  .body {}
+  .main {
+    width: 100%;
+
+  }
 
   /* ハンバーガー */
   .header {
@@ -187,15 +188,17 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 900px;
-    display: flex;
-    align-items: center;
+    position: relative;
   }
+
 
   .banner-text {
     color: #918F89;
     width: 30%;
     font-family: noto-sans;
     font-size: 60px;
+    position: absolute;
+    top: 50%;
     padding: 0 10% 0 10%;
     background-color: rgba(255, 255, 255, 0.8);
   }
@@ -340,7 +343,9 @@
   }
 
 
-  .form {}
+  .form {
+    padding: 0 10%;
+  }
 
   .name,
   .mail {
@@ -351,9 +356,7 @@
     border: 0.5px solid #707070;
     border-radius: 11px;
     opacity: 0.6;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30px;
+    margin: 30px 0;
   }
 
   .form-item__textarea {
@@ -364,9 +367,6 @@
     border: 0.5px solid #707070;
     border-radius: 11px;
     opacity: 0.6;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30px;
   }
 
   .form-submit {
@@ -379,7 +379,7 @@
     border-radius: 16px;
     height: 35px;
     font-size: 16px;
-    font-color: #7D7D7D;
+    color: #7D7D7D;
   }
 
 
