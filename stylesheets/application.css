@@ -137,7 +137,8 @@
     background-color: rgba(255, 255, 255, 0.8);
     position: absolute;
     top: 50%;
-    left: 5%;
+    left: 0;
+    padding: 31px 60px 23px 88px;
   }
 
   .main-image {
@@ -339,6 +340,7 @@
     align-items: center;
     padding: 10%;
     flex-wrap: wrap;
+    box-sizing: border-box;
   }
 
 
@@ -407,7 +409,7 @@
   }
 
   .news-article1 {
-    margin-bottom: 200px;
+    margin-bottom: 600px;
   }
 
   .news-article1-title {
@@ -424,7 +426,6 @@
   .news-images {
     display: flex;
     justify-content: space-around;
-    padding-bottom: 200px;
     position: relative;
   }
 
@@ -498,6 +499,7 @@
 
   .qa-open {
     /* flex: 0 0 80%; */
+    display: block;
     padding-top: 50px;
     font-family: dnp-shuei-mincho-pr6;
     font-size: 12px;
