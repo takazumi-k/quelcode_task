@@ -22,7 +22,8 @@
   }
 
   a:visited {
-    color: white;
+    text-decoration: none;
+    color: none;
   }
 
 
@@ -130,6 +131,11 @@
     transition: .3s ease;
   }
 
+  .global-nav a:visited {
+    text-decoration: none;
+    color: white;
+  }
+
   .global-nav.open {
     /*  display: flex;
     flex: 0 0 100%;
@@ -167,11 +173,6 @@
   }
 
 
-
-  /* .global-nav__items ul li:last-child {
-    border-bottom: solid 10px #fff;
-  } */
-
   .global-nav__item:hover {
     opacity: 1;
   }
@@ -180,24 +181,6 @@
     content: "";
     display: none;
   }
-
-  /* ハンバーガー終わり */
-  /*
-  .banner {
-    background-image: url("../img/sp-index.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-top: 700px;
-  }
-
-  .banner-text {
-    top: 0;
-    color: #918F89;
-    font-family: noto-sans;
-    font-size: 60px;
-    background-color: rgba(255, 255, 255, 0.8);
-  }
-  */
 
   .banner {
     background-image: url("../img/sp-index.png");
@@ -220,12 +203,12 @@
   .article1 {
     background-image: url("../img/AdobeStock_189860956.png");
     background-repeat: no-repeat;
-    background-size: 50%;
+    background-size: 70%;
     background-position-x: center;
     background-position-y: bottom;
-    height: 700px;
+    height: 800px;
     position: relative;
-    padding-bottom: 30%;
+    margin: 0 0 100px 0;
   }
 
   .article1-title {
@@ -238,11 +221,11 @@
     font-size: 26px;
     letter-spacing: 2.5px;
     margin-top: 10%;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
 
   .article1-paragraph {
-    padding: 20px 20%;
+    padding: 20px 15%;
     font-family: dnp-shuei-mincho-pr6, sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -250,41 +233,11 @@
     color: #3B3B3B;
     line-height: 2.5em;
   }
-
-  /*.article1 {
-    background-image: url("../img/AdobeStock_189860956.png");
-    padding-top: 400px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    padding: 0 10%;
-  }
-
-  .article1-title {
-    text-align: center;
-    display: block;
-    width: auto;
-    font-family: dnp-shuei-mincho-pr6, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: #3B3B3B;
-    font-size: 20px;
-    letter-spacing: 2.5px;
-    margin-bottom: 40px;
-  }
-
-  .article1-paragraph {
-    font-family: dnp-shuei-mincho-pr6, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    letter-spacing: 0.36px;
-    color: #3B3B3B;
-    line-height: 2.5em;
-  }*/
 
 
   .article2 {
     width: auto;
+    padding: 0 5%;
   }
 
   .article2-title {
@@ -293,7 +246,7 @@
     font-weight: 400;
     font-style: normal;
     color: #3B3B3B;
-    font-size: 20px;
+    font-size: 26px;
     letter-spacing: 2.5px;
     margin-bottom: 40px;
     margin-top: 40px;
@@ -303,7 +256,10 @@
     object-position: 100% 1%
   }
 
-  .article3 {}
+  .article3 {
+    margin: 0 0 100px 0;
+    text-align: center;
+  }
 
   .article3-title {
     font-family: noto-sans;
@@ -312,7 +268,7 @@
     font-weight: 400;
     font-style: normal;
     color: #3B3B3B;
-    font-size: 25px;
+    font-size: 26px;
     letter-spacing: 2.5px;
     margin-bottom: 40px;
     margin-top: 40px;
@@ -354,13 +310,15 @@
   }
 
   .article3-paragraph {
-    text-align: center;
+    display: block;
+    color: #3B3B3B;
+    /* text-align: center;
     font-family: noto-sans;
     font-weight: 400;
     font-style: normal;
     color: #3B3B3B;
     font-size: 15px;
-    letter-spacing: 1.05px;
+    letter-spacing: 1.05px; */
   }
 
   .article4 {
@@ -491,7 +449,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 60px;
+    margin: 60px 0 60px 0;
   }
 
   .news-image {
@@ -559,6 +517,21 @@
     width: 100%;
     text-align: center;
     background-color: rgba(0, 0, 0, 0);
+  }
+
+  .article3 a {
+    text-decoration: rosybrown;
+
+  }
+
+  .news-paragraph {
+    margin-top: 20px;
+    display: inline-block;
+    font-family: noto-sans;
+    color: #3B3B3B;
+    font-size: 21px;
+    letter-spacing: 1.05px;
+    transition: .3s ease;
   }
 
   /* qa */

@@ -256,6 +256,7 @@
 
 
   .article3-paragraph {
+
     margin-top: 20px;
     display: inline-block;
     font-family: noto-sans;
@@ -433,6 +434,16 @@
     flex: auto;
   }
 
+  .news-paragraph {
+    margin-top: 20px;
+    display: inline-block;
+    font-family: noto-sans;
+    color: #3B3B3B;
+    font-size: 21px;
+    letter-spacing: 1.05px;
+    transition: .3s ease;
+    border-bottom: none;
+  }
 
   /* QA */
 
