@@ -15,9 +15,9 @@
     /* vertical-align: bottom; */
   }
 
-  a:link {
+  /* a:link {
     color: white;
-  }
+  } */
 
   a:visited {
     text-decoration: none;
@@ -251,7 +251,7 @@
 
   .article2-title {
     text-align: center;
-    font-family: dnp-shuei-mincho-pr6, sans-serif;
+    font-family: dnp-shuei-mincho-pr6;
     font-weight: 400;
     font-style: normal;
     color: #3B3B3B;
@@ -319,13 +319,6 @@
   .article3-paragraph {
     display: block;
     color: #3B3B3B;
-    /* text-align: center;
-    font-family: noto-sans;
-    font-weight: 400;
-    font-style: normal;
-    color: #3B3B3B;
-    font-size: 15px;
-    letter-spacing: 1.05px; */
   }
 
   .article4 {
@@ -429,6 +422,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    margin: 0 0 70px 0;
   }
 
   .news-bg-text {
@@ -440,8 +434,20 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    padding-bottom: 70px;
   }
 
+  .news-title {
+    font-family: dnp-shuei-mincho-pr6;
+    font-style: normal;
+    text-align: center;
+    font-weight: 400;
+    font-style: normal;
+    color: #3B3B3B;
+    font-size: 26px;
+    letter-spacing: 2.5px;
+    margin-bottom: 70px;
+  }
 
   .news-article1-title {
     display: none;
@@ -452,7 +458,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 60px 10%;
+    padding: 0 10%;
 
   }
 
@@ -576,6 +582,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    padding-bottom: 32px;
   }
 
   .question {
