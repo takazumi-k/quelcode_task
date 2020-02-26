@@ -20,6 +20,7 @@ const qaToggle01 = () => {
 
   arrow.addEventListener('click', function () {
     qa.classList.toggle('qa-open');
+    arrow.classList.toggle('qa-rotate');
   });
 }
 qaToggle01();
@@ -30,6 +31,7 @@ const qaToggle02 = () => {
 
   arrow.addEventListener('click', function () {
     qa.classList.toggle('qa-open');
+    arrow.classList.toggle('qa-rotate');
   });
 }
 qaToggle02();
@@ -40,6 +42,7 @@ const qaToggle03 = () => {
 
   arrow.addEventListener('click', function () {
     qa.classList.toggle('qa-open');
+    arrow.classList.toggle('qa-rotate');
   });
 }
 qaToggle03();
@@ -50,6 +53,7 @@ const qaToggle04 = () => {
 
   arrow.addEventListener('click', function () {
     qa.classList.toggle('qa-open');
+    arrow.classList.toggle('qa-rotate');
   });
 }
 qaToggle04();
@@ -60,6 +64,7 @@ const qaToggle05 = () => {
 
   arrow.addEventListener('click', function () {
     qa.classList.toggle('qa-open');
+    arrow.classList.toggle('qa-rotate');
   });
 }
 qaToggle05();
