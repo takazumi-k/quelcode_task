@@ -593,21 +593,28 @@
   }
 
   .qa-item i {
-    flex: 0 0 10%;
     cursor: pointer;
+    transition: all 300ms 0s ease;
+  }
+
+  .qa-rotate {
+    transform: rotate(-180deg);
   }
 
   .qa-close {
-    display: none;
+    padding: 20px 0;
+    font-family: dnp-shuei-mincho-pr6;
+    font-size: 14px;
+    color: #3b3b3b;
+    transition: opacity 0.3s, visibility 0s ease 1s;
+    opacity: 0;
+    visibility: hidden;
   }
 
   .qa-open {
-    padding: 20px 0;
-    font-family: dnp-shuei-mincho-pr6, sans-serif;
-    font-size: 14px;
-    color: #3b3b3b;
-    text-align: left;
-    display: inline-block;
+    transition-delay: 0s;
+    opacity: 1;
+    visibility: visible;
   }
 
 
