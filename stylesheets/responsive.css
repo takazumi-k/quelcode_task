@@ -607,11 +607,13 @@
 
   .qa-open {
     padding: 20px 0;
-    font-family: dnp-shuei-mincho-pr6, sans-serif;
+    font-family: dnp-shuei-mincho-pr6;
     font-size: 14px;
     color: #3b3b3b;
     text-align: left;
     display: inline-block;
+    animation: fadeIn 1s ease 0s 1 normal;
+    -webkit-animation: fadeIn 1s ease 0s 1 normal;
   }
 
 
